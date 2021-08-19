@@ -1,7 +1,8 @@
 package Security;
 
+import Security.Roles.Apunteniano;
 import Security.Roles.Rol;
-
+import Security.Roles.Visitante;
 
 public class Usuario {
 
@@ -11,11 +12,18 @@ public class Usuario {
     private Rol rol;
 
     //CONSTRUCTOR ----------------------------------------------------------
-    public Usuario(String usuario, String contrasenia){
-        if(new ValidadoresEnAccion().esValida(contrasenia)){
+    public Usuario(String usuario, String supuestaClave){
+        if(new ValidadoresEnAccion().esValida(supuestaClave)){
             this.nombreUsuario = usuario;
-            this.password = contrasenia;
+            this.password = supuestaClave;
+            this.rol = new Apunteniano();
         }
+    }
+
+    public Usuario(){
+        this.nombreUsuario = "visitante";
+        this.password = "";
+        this.rol = new Visitante();
     }
 
     //GETTERS ----------------------------------------------------------

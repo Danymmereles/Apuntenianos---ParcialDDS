@@ -1,15 +1,15 @@
 package Security.Roles;
 
-public class Moderador implements Rol{
+public class Visitante implements Rol{
 
     @Override
     public boolean puedeEnviarApunte() {
-        return true;
+        return false;
     }
 
     @Override
     public boolean puedeEnviarSugerencia() {
-        return true;
+        return false;
     }
 
     @Override
@@ -19,16 +19,16 @@ public class Moderador implements Rol{
 
     @Override
     public boolean puedeAdministrarApuntes() {
-        return true;
+        return false;
     }
 
     @Override
     public boolean puedeComentar() {
-        return true;
+        return false;
     }
 
     @Override
     public boolean puedenHacerModeradores() {
-        return true;
+        return false;
     }
 }

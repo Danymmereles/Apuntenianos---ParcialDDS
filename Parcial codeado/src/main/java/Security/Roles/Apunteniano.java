@@ -27,4 +27,8 @@ public class Apunteniano implements Rol{
         return true;
     }
 
+    @Override
+    public boolean puedenHacerModeradores() {
+        return false;
+    }
 }
