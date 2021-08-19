@@ -1,5 +1,6 @@
 package Security;
 
+
 public class ValidadorNull implements Validador{
     @Override
     public boolean esValido(String password) {
@@ -8,5 +9,6 @@ public class ValidadorNull implements Validador{
         }
         else {
             return true;
+        }
     }
 }
