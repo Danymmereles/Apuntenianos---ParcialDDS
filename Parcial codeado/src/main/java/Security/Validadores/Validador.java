@@ -1,4 +1,4 @@
-package Security;
+package Security.Validadores;
 
 
 public interface Validador {

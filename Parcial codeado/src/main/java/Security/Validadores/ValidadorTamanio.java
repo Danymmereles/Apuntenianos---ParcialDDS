@@ -1,4 +1,4 @@
-package Security;
+package Security.Validadores;
 
 public class ValidadorTamanio implements Validador{
     @java.lang.Override
