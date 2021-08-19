@@ -1,4 +1,4 @@
 package Bussiness.Busqueda;
 
-public class SegunUniversidad ç {
+public class SegunUniversidad {
 }
