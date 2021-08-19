@@ -1,7 +1,7 @@
 package Security;
 
 public class ValidadorNull implements Validador{
-    @java.lang.Override
+    @Override
     public boolean esValido(String password) {
         if (password.isEmpty()) {
             //throw new NullException();
