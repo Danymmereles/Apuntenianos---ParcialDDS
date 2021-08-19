@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9948dfb4-8461-4732-a4c9-e395e105319f" name="Default Changelist" comment="Creando el proyecto" />
+    <list default="true" id="9948dfb4-8461-4732-a4c9-e395e105319f" name="Default Changelist" comment="Creando el proyecto">
+      <change afterPath="$PROJECT_DIR$/Parcial codeado/src/main/java/Business/Apunte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parcial codeado/src/main/java/Business/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parcial codeado/src/main/java/Business/Sugerencia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parcial codeado/src/main/java/Business/Tematica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +20,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1wuHUZgVqD2HlMMeFMYJp3hnNXd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -21,6 +28,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="advanced.settings" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
