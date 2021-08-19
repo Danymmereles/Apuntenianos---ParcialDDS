@@ -5,12 +5,12 @@ import Security.Roles.Rol;
 
 public class Usuario {
 
-    //ATRIBUTOS
+    //ATRIBUTOS ----------------------------------------------------------
     private String nombreUsuario;
     private String password;
     private Rol rol;
 
-    //CONSTRUCTOR
+    //CONSTRUCTOR ----------------------------------------------------------
     public Usuario(String usuario, String contrasenia){
         if(new ValidadoresEnAccion().esValida(contrasenia)){
             this.nombreUsuario = usuario;
@@ -18,7 +18,7 @@ public class Usuario {
         }
     }
 
-    //GETTERS
+    //GETTERS ----------------------------------------------------------
     public String getNombreUsuario(){
         return nombreUsuario;
     }
@@ -31,7 +31,7 @@ public class Usuario {
         return rol;
     }
 
-    //SETTERS
+    //SETTERS ----------------------------------------------------------
     public void setNombreUsuario(String nombreUsuario) {
         this.nombreUsuario = nombreUsuario;
     }
