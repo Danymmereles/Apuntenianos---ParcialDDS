@@ -9,7 +9,6 @@ public class ValidadorTamanio implements Validador{
             return true;
         }
         else {
-            //throw new TamanioException();
             return false;
         }
     }
