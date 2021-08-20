@@ -2,7 +2,6 @@ import Bussiness.Persona;
 import Security.Usuario;
 
 import java.util.Scanner;
-import java.lang.NullPointerException;
 
 public class main {
     public static void main(String[] args) {

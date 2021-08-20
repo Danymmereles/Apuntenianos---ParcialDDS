@@ -71,4 +71,7 @@ public class Usuario {
     public void setPersona(Persona persona) {
         this.persona = persona;
     }
+
+    //METODOS PROPIOS
+    //FIJARSE
 }
