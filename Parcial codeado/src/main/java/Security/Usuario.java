@@ -16,18 +16,24 @@ public class Usuario {
 
     //CONSTRUCTOR ----------------------------------------------------------
     public Usuario(String usuario, String supuestaClave, Persona aRegistrar){
+
+        this.nombreUsuario = usuario;
+
         if(new ValidadoresEnAccion().esValida(supuestaClave)){
-            this.nombreUsuario = usuario;
             this.password = supuestaClave;
-            this.rol = new Apunteniano();
-            this.persona = aRegistrar;
+        } else {
+            this.password = "";
         }
+
+        this.rol = new Apunteniano();
+        this.persona = aRegistrar;
     }
 
     public Usuario(){
         this.nombreUsuario = "visitante";
         this.password = "";
         this.rol = new Visitante();
+        this.persona = new Persona("SinNombre");
     }
 
     //GETTERS ----------------------------------------------------------
@@ -43,17 +49,26 @@ public class Usuario {
         return rol;
     }
 
+    public Persona getPersona() {
+        return persona;
+    }
+
     //SETTERS ----------------------------------------------------------
     public void setNombreUsuario(String nombreUsuario) {
         this.nombreUsuario = nombreUsuario;
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        if(new ValidadoresEnAccion().esValida(password)){
+            this.password = password;
+        }
     }
 
     public void setRol(Rol rol) {
         this.rol = rol;
     }
 
+    public void setPersona(Persona persona) {
+        this.persona = persona;
+    }
 }
