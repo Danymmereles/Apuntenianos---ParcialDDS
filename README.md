@@ -2,13 +2,13 @@
 ## Parcial Diseño de Sistemas - K3002
 
 **Docente:** 
-    - Luciano Straccia
+- Luciano Straccia
 
 **Ayudantes:**
-    - Christian Nievas 
-    - Jonathan Buzzetti
+- Christian Nievas 
+- Jonathan Buzzetti
 
 **Integrantes:**
-    - Matias Espinoza
-    - Daniela Mereles
+- Matias Espinoza
+- Daniela Mereles
 
