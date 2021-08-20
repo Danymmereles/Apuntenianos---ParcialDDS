@@ -1,8 +1,10 @@
 package Security;
 
+import Bussiness.Persona;
 import Security.Roles.Apunteniano;
 import Security.Roles.Rol;
 import Security.Roles.Visitante;
+import Security.Validadores.ValidadoresEnAccion;
 
 public class Usuario {
 
@@ -10,13 +12,15 @@ public class Usuario {
     private String nombreUsuario;
     private String password;
     private Rol rol;
+    private Persona persona;
 
     //CONSTRUCTOR ----------------------------------------------------------
-    public Usuario(String usuario, String supuestaClave){
+    public Usuario(String usuario, String supuestaClave, Persona aRegistrar){
         if(new ValidadoresEnAccion().esValida(supuestaClave)){
             this.nombreUsuario = usuario;
             this.password = supuestaClave;
             this.rol = new Apunteniano();
+            this.persona = aRegistrar;
         }
     }
 
