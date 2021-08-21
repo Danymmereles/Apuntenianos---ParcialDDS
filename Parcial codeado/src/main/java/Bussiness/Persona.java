@@ -73,4 +73,9 @@ public class Persona {
         sugerenciasEnviadas.add(nuevaSugerencia);
     }
 
+    public void agregarApunte (ApunteSubido nuevoApunte){
+        this.apuntes.add(nuevoApunte);
+    }
+    //Administrar apunte, en realidad son botones, nosotros tenemos que aprobarlos o no y eso es un metodo de apuntes
+
 }
