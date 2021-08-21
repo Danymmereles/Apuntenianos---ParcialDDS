@@ -1,5 +1,6 @@
 package Security;
 
+import Bussiness.EstadoPersona;
 import Bussiness.Persona;
 import Security.Roles.Apunteniano;
 import Security.Roles.Rol;
@@ -73,5 +74,8 @@ public class Usuario {
     }
 
     //METODOS PROPIOS
-    //FIJARSE
+    public boolean accesoLimitado (){
+        return !(this.persona.getEstadoUsuario() == EstadoPersona.HABILITADO);
+    }
+
 }

@@ -1,4 +1,13 @@
 package Bussiness.Busqueda;
 
-public class SegunMateria {
+import Bussiness.Apuntes.ApunteSubido;
+
+import java.util.List;
+
+//REALIZAR
+public class SegunMateria implements BusquedaApuntes{
+    @Override
+    public List<ApunteSubido> buscar() {
+        return null;
+    }
 }

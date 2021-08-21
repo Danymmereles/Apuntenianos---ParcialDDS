@@ -31,15 +31,15 @@ public class main {
                 usuarioDePrueba.setPassword(datosACompletar.nextLine());
             }
             System.out.print("\nMuy bien! Su usuario ha sido creado con los siguientes datos\n");
-            System.out.print("\n     USUARIO:"+ usuarioDePrueba.getNombreUsuario());
-            System.out.print("\n     NOMBRE COMPLETO:" + usuarioDePrueba.getPersona().getNombre());
-            System.out.print("\n     CLAVE:"+ usuarioDePrueba.getPassword());
+            System.out.print("\n     USUARIO :"+ usuarioDePrueba.getNombreUsuario());
+            System.out.print("\n     NOMBRE COMPLETO: " + usuarioDePrueba.getPersona().getNombre());
+            System.out.print("\n     CLAVE: "+ usuarioDePrueba.getPassword());
         } else {
             Usuario usuarioDePrueba = new Usuario();
             System.out.print("\nQue lastima! Pero no te preocupes, podes anotarte cuando quieras. Con gusto te esperaremos\n");
-            System.out.print("\n     USUARIO:"+ usuarioDePrueba.getNombreUsuario());
-            System.out.print("\n     NOMBRE COMPLETO:" + usuarioDePrueba.getPersona().getNombre());
-            System.out.print("\n     CLAVE:"+ usuarioDePrueba.getPassword());
+            System.out.print("\n     USUARIO: "+ usuarioDePrueba.getNombreUsuario());
+            System.out.print("\n     NOMBRE COMPLETO: " + usuarioDePrueba.getPersona().getNombre());
+            System.out.print("\n     CLAVE: "+ usuarioDePrueba.getPassword());
         }
     }
 }

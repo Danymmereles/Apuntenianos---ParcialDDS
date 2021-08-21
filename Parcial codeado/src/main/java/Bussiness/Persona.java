@@ -13,15 +13,14 @@ public class Persona {
     private int cantApuntes;
     private List <ApunteSubido> apuntes;
     private List <Sugerencia> sugerenciasEnviadas;
-    private Estado estadoUsuario;
-    //El estado va aca o en security?
+    private EstadoPersona estadoUsuario;
 
     //GETTERS
     public String getNombre() {
         return nombre;
     }
 
-    public Estado getEstadoUsuario() {
+    public EstadoPersona getEstadoUsuario() {
         return estadoUsuario;
     }
 
@@ -50,7 +49,7 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public void setEstadoUsuario(Estado estadoUsuario) {
+    public void setEstadoUsuario(EstadoPersona estadoUsuario) {
         this.estadoUsuario = estadoUsuario;
     }
 
@@ -64,5 +63,9 @@ public class Persona {
     //CONSTRUCTOR
     public Persona (String suNombre){
         this.nombre = suNombre;
+        this.estadoUsuario = EstadoPersona.HABILITADO;
     }
+
+    //METODOS
+
 }
