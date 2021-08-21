@@ -2,11 +2,11 @@ package Bussiness;
 
 public class Respuesta {
 
-    //ATRIBUTOS
+    //ATRIBUTOS ----------------------------------------------------------
     private String descripcion;
     private Persona quienResponde;
 
-    //GETTERS
+    //GETTERS ----------------------------------------------------------
     public Persona getQuienResponde() {
         return quienResponde;
     }
@@ -15,7 +15,7 @@ public class Respuesta {
         return descripcion;
     }
 
-    //SETTERS
+    //SETTERS ----------------------------------------------------------
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
@@ -24,9 +24,13 @@ public class Respuesta {
         this.quienResponde = quienResponde;
     }
 
-    //METODOS
-    public Respuesta realizarRespuesta ( ){
-        Respuesta aResponder = new Respuesta();
-        return aResponder;
+    //CONSTRUCTOR
+    public Respuesta (String mensaje, Persona responde){
+        this.descripcion = mensaje;
+        this.quienResponde = responde;
     }
+
+    //METODOS ----------------------------------------------------------
+    //FIJARSE
+
 }

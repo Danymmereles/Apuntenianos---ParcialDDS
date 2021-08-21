@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Persona {
 
-    //ATRIBUTOS
+    //ATRIBUTOS ----------------------------------------------------------
     private String nombre;
     private List <Universidad> universidad;
     private List <String> carrera;
@@ -15,7 +15,7 @@ public class Persona {
     private List <Sugerencia> sugerenciasEnviadas;
     private EstadoPersona estadoUsuario;
 
-    //GETTERS
+    //GETTERS ----------------------------------------------------------
     public String getNombre() {
         return nombre;
     }
@@ -44,7 +44,7 @@ public class Persona {
         return carrera;
     }
 
-    //SETTERS
+    //SETTERS ----------------------------------------------------------
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -60,12 +60,17 @@ public class Persona {
         //setUniversidad
         //setCarrera
 
-    //CONSTRUCTOR
+    //CONSTRUCTOR ----------------------------------------------------------
     public Persona (String suNombre){
         this.nombre = suNombre;
-        this.estadoUsuario = EstadoPersona.HABILITADO;
+        this.estadoUsuario = EstadoPersona.BLOQUEADO;
+        //Porque debe validarlo
     }
 
-    //METODOS
+    //METODOS ----------------------------------------------------------
+    public void realizarSugerencia (String descripcion){
+        Sugerencia nuevaSugerencia = new Sugerencia(descripcion, this);
+        sugerenciasEnviadas.add(nuevaSugerencia);
+    }
 
 }
