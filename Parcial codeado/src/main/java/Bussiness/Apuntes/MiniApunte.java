@@ -1,4 +1,5 @@
 package Bussiness.Apuntes;
 
-public class MiniApunte {
+public class MiniApunte extends ApunteSubido{
+
 }
