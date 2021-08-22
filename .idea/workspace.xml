@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9948dfb4-8461-4732-a4c9-e395e105319f" name="Default Changelist" comment="Creando el proyecto">
-      <change afterPath="$PROJECT_DIR$/Parcial codeado/src/main/java/Business/Apunte.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Parcial codeado/src/main/java/Business/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Parcial codeado/src/main/java/Business/Sugerencia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Parcial codeado/src/main/java/Business/Tematica.java" afterDir="false" />
+    <list default="true" id="9948dfb4-8461-4732-a4c9-e395e105319f" name="Default Changelist" comment="Creando archivos :)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parcial codeado/src/main/java/Bussiness/Apuntes/ApunteSubido.java" beforeDir="false" afterPath="$PROJECT_DIR$/Parcial codeado/src/main/java/Bussiness/Apuntes/ApunteSubido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parcial codeado/src/main/java/Bussiness/Tematicas/Curso.java" beforeDir="false" afterPath="$PROJECT_DIR$/Parcial codeado/src/main/java/Bussiness/Tematicas/Curso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parcial codeado/src/main/java/Bussiness/Tematicas/Materia.java" beforeDir="false" afterPath="$PROJECT_DIR$/Parcial codeado/src/main/java/Bussiness/Tematicas/Materia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parcial codeado/src/main/java/Bussiness/Tematicas/Tematica.java" beforeDir="false" afterPath="$PROJECT_DIR$/Parcial codeado/src/main/java/Bussiness/Tematicas/Tematica.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,11 +24,15 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="advanced.settings" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -53,7 +57,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629303826978</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Creando archivos :)">
+      <created>1629407369728</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1629407369728</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -61,7 +72,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -70,6 +93,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creando el proyecto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creando el proyecto" />
+    <MESSAGE value="Creando archivos :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creando archivos :)" />
   </component>
 </project>
