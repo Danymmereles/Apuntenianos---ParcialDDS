@@ -30,7 +30,6 @@ public abstract class ApunteSubido {
     //METODOS PROPIOS
     // public void administrarApunte (){ } Me parece que seria mejor dejarlo aca
 
-
     //FIJARSE
 
 }
