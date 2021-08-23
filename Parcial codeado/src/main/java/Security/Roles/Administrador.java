@@ -31,4 +31,9 @@ public class Administrador implements Rol{
     public boolean puedenHacerModeradores() {
         return true;
     }
+
+    @Override
+    public boolean puedeBannear() {
+        return true;
+    }
 }

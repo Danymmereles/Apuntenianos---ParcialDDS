@@ -7,4 +7,5 @@ public interface Rol {
     boolean puedeAdministrarApuntes();
     boolean puedeEnviarSugerencia();
     boolean puedenHacerModeradores();
+    boolean puedeBannear ();
 }

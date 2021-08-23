@@ -2,6 +2,7 @@ package Bussiness;
 
 import Bussiness.Apuntes.ApunteSubido;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public class Persona {
@@ -14,6 +15,7 @@ public class Persona {
     private List <ApunteSubido> apuntes;
     private List <Sugerencia> sugerenciasEnviadas;
     private EstadoPersona estadoUsuario;
+    private LocalDate suspension;
 
     //GETTERS ----------------------------------------------------------
     public String getNombre() {
@@ -44,6 +46,10 @@ public class Persona {
         return carrera;
     }
 
+    public LocalDate getSuspension() {
+        return suspension;
+    }
+
     //SETTERS ----------------------------------------------------------
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -51,6 +57,10 @@ public class Persona {
 
     public void setEstadoUsuario(EstadoPersona estadoUsuario) {
         this.estadoUsuario = estadoUsuario;
+    }
+
+    public void setSuspension(LocalDate suspension) {
+        this.suspension = suspension;
     }
 
     //los siguientes set no los agregue porque siempre va a ser progresivo

@@ -7,6 +7,8 @@ import Security.Roles.Rol;
 import Security.Roles.Visitante;
 import Security.Validadores.ValidadoresEnAccion;
 
+import java.time.LocalDate;
+
 public class Usuario {
 
     //ATRIBUTOS ----------------------------------------------------------
@@ -74,9 +76,34 @@ public class Usuario {
         this.persona = persona;
     }
 
-    //METODOS PROPIOS
+    //METODOS PROPIOS ----------------------------------------------------------
     public boolean accesoLimitado (){
         return !(this.persona.getEstadoUsuario() == EstadoPersona.HABILITADO);
+    }
+
+    public void verificadoMail (){
+        this.persona.setEstadoUsuario(EstadoPersona.HABILITADO);
+    }
+
+    public void deshabilitarUsuario (){
+        if (puedeSuspenderse()){
+            this.persona.setEstadoUsuario(EstadoPersona.INHABILITADO);
+        }
+    }
+
+    public void banearUsuario (LocalDate hastaCuando){
+        this.persona.setEstadoUsuario(EstadoPersona.BLOQUEADO);
+        this.persona.setSuspension(hastaCuando);
+    }
+
+    public boolean sigueSuspendido (){
+        LocalDate diaDeLaFecha = LocalDate.now();
+        return this.persona.getSuspension().isAfter(diaDeLaFecha);
+    }
+
+    public boolean puedeSuspenderse (){
+        String miClaseRol = this.rol.getClass().getName();
+        return (miClaseRol.equals("Apunteniano"));
     }
 
 }
