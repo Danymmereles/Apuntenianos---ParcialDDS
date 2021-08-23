@@ -6,8 +6,8 @@ import Bussiness.Tematicas.Tematica;
 public abstract class ApunteSubido {
 
     //ATRIBUTOS
-    private Tematica temaApunte;
-    private Estado situacion;
+    protected Tematica temaApunte;
+    protected Estado situacion;
 
     //GETTERS
     public Estado getSituacion() {

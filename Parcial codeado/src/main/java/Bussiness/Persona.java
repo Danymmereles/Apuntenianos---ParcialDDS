@@ -78,4 +78,20 @@ public class Persona {
     }
     //Administrar apunte, en realidad son botones, nosotros tenemos que aprobarlos o no y eso es un metodo de apuntes
 
+    public void editarUniversidad (Universidad universidad){
+        if (this.universidad.contains(universidad)){
+            this.universidad.remove(universidad);
+        } else {
+            this.universidad.add(universidad);
+        }
+    }
+
+    public void editarCarrera (String carrera){
+        if (this.carrera.contains(carrera)){
+            this.carrera.remove(carrera);
+        } else {
+            this.carrera.add(carrera);
+        }
+    }
+
 }

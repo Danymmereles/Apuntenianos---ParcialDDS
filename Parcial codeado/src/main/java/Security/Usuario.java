@@ -10,7 +10,10 @@ import Security.Validadores.ValidadoresEnAccion;
 public class Usuario {
 
     //ATRIBUTOS ----------------------------------------------------------
-    private String nombreUsuario;
+    private String nombreUsuario; //ARREGLAR
+
+    //private String mail; ??
+
     private String password;
     private Rol rol;
     private Persona persona;
