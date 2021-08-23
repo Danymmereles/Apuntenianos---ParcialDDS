@@ -10,18 +10,15 @@ import Security.Validadores.ValidadoresEnAccion;
 public class Usuario {
 
     //ATRIBUTOS ----------------------------------------------------------
-    private String nombreUsuario; //ARREGLAR
-
-    //private String mail; ??
-
+    private String mail;
     private String password;
     private Rol rol;
     private Persona persona;
 
     //CONSTRUCTOR ----------------------------------------------------------
-    public Usuario(String usuario, String supuestaClave, Persona aRegistrar){
+    public Usuario(String mail, String supuestaClave, Persona aRegistrar){
 
-        this.nombreUsuario = usuario;
+        this.mail = mail;
 
         if(new ValidadoresEnAccion().esValida(supuestaClave)){
             this.password = supuestaClave;
@@ -31,18 +28,19 @@ public class Usuario {
 
         this.rol = new Apunteniano();
         this.persona = aRegistrar;
+        //El estado de la persona se determina dentro de la persona en lugar del usuario
     }
 
     public Usuario(){
-        this.nombreUsuario = "visitante";
+        this.mail = "";
         this.password = "";
         this.rol = new Visitante();
         this.persona = new Persona("SinNombre");
     }
 
     //GETTERS ----------------------------------------------------------
-    public String getNombreUsuario(){
-        return nombreUsuario;
+    public String getMail() {
+        return mail;
     }
 
     public String getPassword() {
@@ -58,8 +56,8 @@ public class Usuario {
     }
 
     //SETTERS ----------------------------------------------------------
-    public void setNombreUsuario(String nombreUsuario) {
-        this.nombreUsuario = nombreUsuario;
+    public void setMail(String mail) {
+        this.mail = mail;
     }
 
     public void setPassword(String password) {

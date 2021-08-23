@@ -2,6 +2,6 @@ package Bussiness.Tematicas;
 
 public class Curso {
 
-    //ATRIBUTOS
+    //ATRIBUTOS ----------------------------------------------------------
     private String link;
 }

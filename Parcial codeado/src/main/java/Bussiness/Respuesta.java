@@ -30,7 +30,7 @@ public class Respuesta {
         this.quienResponde = responde;
     }
 
-    //METODOS ----------------------------------------------------------
+    //METODOS PROPIOS ----------------------------------------------------------
     //FIJARSE
 
 }

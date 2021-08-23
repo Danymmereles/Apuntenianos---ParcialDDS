@@ -1,8 +1,10 @@
 package Bussiness.Tematicas;
 
+import Bussiness.Universidad;
+
 public class Materia {
 
-    //ATRIBUTOS
+    //ATRIBUTOS ----------------------------------------------------------
     private String carrera;
-    //private Universidad universidad;
+    private Universidad universidad;
 }

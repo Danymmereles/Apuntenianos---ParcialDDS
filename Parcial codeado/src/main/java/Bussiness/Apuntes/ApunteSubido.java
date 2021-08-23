@@ -5,11 +5,11 @@ import Bussiness.Tematicas.Tematica;
 
 public abstract class ApunteSubido {
 
-    //ATRIBUTOS
+    //ATRIBUTOS ----------------------------------------------------------
     protected Tematica temaApunte;
     protected Estado situacion;
 
-    //GETTERS
+    //GETTERS ----------------------------------------------------------
     public Estado getSituacion() {
         return situacion;
     }
@@ -18,7 +18,7 @@ public abstract class ApunteSubido {
         return temaApunte;
     }
 
-    //SETTERS
+    //SETTERS ----------------------------------------------------------
     public void setSituacion(Estado situacion) {
         this.situacion = situacion;
     }
@@ -27,9 +27,7 @@ public abstract class ApunteSubido {
         this.temaApunte = temaApunte;
     }
 
-    //METODOS PROPIOS
-    // public void administrarApunte (){ } Me parece que seria mejor dejarlo aca
-
+    //METODOS PROPIOS ----------------------------------------------------------
     //FIJARSE
 
 }

@@ -65,9 +65,10 @@ public class Persona {
         this.nombre = suNombre;
         this.estadoUsuario = EstadoPersona.BLOQUEADO;
         //Porque debe validarlo
+        this.cantApuntes = 0;
     }
 
-    //METODOS ----------------------------------------------------------
+    //METODOS PROPIOS ----------------------------------------------------------
     public void realizarSugerencia (String descripcion){
         Sugerencia nuevaSugerencia = new Sugerencia(descripcion, this);
         sugerenciasEnviadas.add(nuevaSugerencia);
@@ -75,8 +76,13 @@ public class Persona {
 
     public void agregarApunte (ApunteSubido nuevoApunte){
         this.apuntes.add(nuevoApunte);
+        this.cantApuntes++;
     }
-    //Administrar apunte, en realidad son botones, nosotros tenemos que aprobarlos o no y eso es un metodo de apuntes
+
+    public void eliminarApunte (ApunteSubido apunteAEliminar){
+        this.apuntes.remove(apunteAEliminar);
+        this.cantApuntes--;
+    }
 
     public void editarUniversidad (Universidad universidad){
         if (this.universidad.contains(universidad)){

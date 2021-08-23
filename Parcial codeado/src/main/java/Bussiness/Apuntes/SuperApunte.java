@@ -7,17 +7,24 @@ import java.util.List;
 
 public class SuperApunte extends ApunteSubido{
 
-    //ATRIBUTOS
+    //ATRIBUTOS ----------------------------------------------------------
     private List<ApunteSubido> apuntecitos;
 
-    //GETTER
+    //GETTER ----------------------------------------------------------
     public List<ApunteSubido> getApuntecitos() {
         return apuntecitos;
     }
 
-    //CONSTRUCTOR
-    //PROBLEMAS
-    
+    //SETTER ----------------------------------------------------------
+    //NO HAY PORQUE ES PROGRESIVO
+
+    //CONSTRUCTOR ----------------------------------------------------------
+    public SuperApunte (Tematica tematica){
+        this.temaApunte = tematica;
+        this.situacion = Estado.PENDIENTE;
+    }
+
+    //METODOS PROPIOS ----------------------------------------------------------
     public void administrarApunte (){
 
         int contadorPendientes = 0;
@@ -39,5 +46,13 @@ public class SuperApunte extends ApunteSubido{
         } else {
             this.situacion = Estado.APROBADO;
         }
+    }
+
+    public void subirApuntecito (ApunteSubido apuntecitoASubir){
+        this.apuntecitos.add(apuntecitoASubir);
+    }
+
+    public void eliminarApuntecito (ApunteSubido apuntecitoASubir){
+        this.apuntecitos.add(apuntecitoASubir);
     }
 }
