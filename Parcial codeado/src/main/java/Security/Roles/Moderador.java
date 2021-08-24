@@ -2,6 +2,15 @@ package Security.Roles;
 
 public class Moderador implements Rol{
 
+    private static Moderador mod = null;
+
+    public static Moderador getInstance (){
+        if(mod== null){
+            mod = new Moderador();
+        }
+        return mod;
+    }
+
     @Override
     public boolean puedeEnviarApunte() {
         return true;

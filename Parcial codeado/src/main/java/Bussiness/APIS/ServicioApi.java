@@ -8,6 +8,6 @@ import retrofit2.http.Query;
 import java.util.List;
 
 public interface ServicioApi {
-    @GET("universidad")
-    Call<List<Universidad>> univesidades (@Query("name") String name)
+    @GET("universidades")
+    Call<List<Universidad>> univesidades (@Query("name") String name, @Query("web_pages") List<String> web_pages, @Query("state-province") String stateprovince);
 }

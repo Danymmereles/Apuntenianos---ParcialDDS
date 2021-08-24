@@ -28,7 +28,7 @@ public class Usuario {
             this.password = "";
         }
 
-        this.rol = new Apunteniano();
+        this.rol = Apunteniano.getInstance();
         this.persona = aRegistrar;
         //El estado de la persona se determina dentro de la persona en lugar del usuario
     }
@@ -36,7 +36,7 @@ public class Usuario {
     public Usuario(){
         this.mail = "";
         this.password = "";
-        this.rol = new Visitante();
+        this.rol = Visitante.getInstance();
         this.persona = new Persona("SinNombre");
     }
 

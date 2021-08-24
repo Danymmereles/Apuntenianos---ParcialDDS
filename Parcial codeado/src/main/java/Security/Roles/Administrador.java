@@ -1,6 +1,17 @@
 package Security.Roles;
 
+import Bussiness.Diccionario;
+
 public class Administrador implements Rol{
+
+    private static Administrador admi = null;
+
+    public static Administrador getInstance (){
+        if(admi== null){
+            admi = new Administrador();
+        }
+        return admi;
+    }
 
     @Override
     public boolean puedeComentar() {

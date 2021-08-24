@@ -1,5 +1,6 @@
 package Bussiness;
 
+import Bussiness.APIS.ApiUniversidad;
 import Bussiness.Tematicas.Curso;
 import Bussiness.Tematicas.Materia;
 
@@ -12,6 +13,7 @@ public class Diccionario {
     private List<Materia> materiasHabiles;
     private List<String> carrerasHabiles;
     private List<Universidad> universidadesHabiles;
+    private static Diccionario diccionarioGlobal = null;
 
     //GETTERS  ----------------------------------------------------------
     public List<Curso> getCursosHabiles() {
@@ -33,9 +35,12 @@ public class Diccionario {
     //SETTERS
     //NO HAY PORQUE SE AGREGAN DE A POCO
 
-    //CONSTRUCTOR -> VER QUE ONDA
+    //CONSTRUCTOR  ----------------------------------------------------------
     public static Diccionario getInstance() {
-        return ;
+        if(diccionarioGlobal== null){
+            diccionarioGlobal = new Diccionario();
+        }
+        return diccionarioGlobal;
     }
 
     //METODOS PROPIOS  ----------------------------------------------------------
@@ -69,4 +74,21 @@ public class Diccionario {
         }
         return false;
     }
+
+    public void agregarCarrera (String Carrera){
+        this.carrerasHabiles.add(Carrera);
+    }
+
+    public void agregarMateria (Materia nuevaMateria){
+        this.materiasHabiles.add(nuevaMateria);
+    }
+
+    public void agregarCurso (Curso nuevoCurso){
+        this.cursosHabiles.add(nuevoCurso);
+    }
+
+    public void agregarUniversidad (Universidad nuevaUniversidad){
+        this.universidadesHabiles.add(nuevaUniversidad);
+    }
+
 }
