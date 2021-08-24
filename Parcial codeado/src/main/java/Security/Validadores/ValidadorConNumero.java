@@ -5,9 +5,9 @@ public class ValidadorConNumero implements Validador{
     public boolean esValido(String password) {
         for (int i = 0; i<password.length();i++){
             if (Character.isDigit(password.charAt(i))){
-                return false;
+                return true;
             }
         }
-        return true;
+        return false;
     }
 }
