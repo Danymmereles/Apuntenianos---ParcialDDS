@@ -81,7 +81,7 @@ public class Usuario {
         return !(this.persona.getEstadoUsuario() == EstadoPersona.HABILITADO);
     }
 
-    public void verificadoMail (){
+    public void habilitarUsuario (){
         this.persona.setEstadoUsuario(EstadoPersona.HABILITADO);
     }
 
@@ -91,9 +91,10 @@ public class Usuario {
         }
     }
 
-    public void banearUsuario (LocalDate hastaCuando){
+    public void banearUsuario (int dias){
         this.persona.setEstadoUsuario(EstadoPersona.BLOQUEADO);
-        this.persona.setSuspension(hastaCuando);
+        LocalDate diaActual = LocalDate.now();
+        this.persona.setSuspension(diaActual.plusDays(dias));
     }
 
     public boolean sigueSuspendido (){
