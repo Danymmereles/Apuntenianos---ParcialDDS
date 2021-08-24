@@ -1,5 +1,7 @@
 package Bussiness;
 
+import Bussiness.EstadosTrabajados.Estado;
+
 import java.util.List;
 
 public class Sugerencia {

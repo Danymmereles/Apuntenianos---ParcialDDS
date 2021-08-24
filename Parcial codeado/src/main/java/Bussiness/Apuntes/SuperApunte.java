@@ -1,6 +1,6 @@
 package Bussiness.Apuntes;
 
-import Bussiness.Estado;
+import Bussiness.EstadosTrabajados.Estado;
 import Bussiness.Tematicas.Tematica;
 
 import java.util.List;

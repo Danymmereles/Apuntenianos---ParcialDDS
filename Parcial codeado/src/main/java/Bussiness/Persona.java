@@ -1,6 +1,7 @@
 package Bussiness;
 
 import Bussiness.Apuntes.ApunteSubido;
+import Bussiness.EstadosTrabajados.EstadoPersona;
 
 import java.time.LocalDate;
 import java.util.List;

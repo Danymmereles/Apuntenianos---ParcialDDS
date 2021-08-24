@@ -1,15 +1,24 @@
 package Bussiness.Apuntes;
 
-import Bussiness.Estado;
+import Bussiness.EstadosTrabajados.Estado;
+
+import javax.swing.*;
 
 public class MiniApunte extends ApunteSubido{
 
     //ATRIBUTOS ----------------------------------------------------------
     //FALTAN
+    JFileChooser miDocumento;
 
     //GETTERS ----------------------------------------------------------
+    public JFileChooser getMiDocumento() {
+        return miDocumento;
+    }
 
     //SETTERS ----------------------------------------------------------
+    public void setMiDocumento(JFileChooser miDocumento) {
+        this.miDocumento = miDocumento;
+    }
 
     //CONSTRUCTOR ----------------------------------------------------------
     public MiniApunte(){

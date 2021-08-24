@@ -1,6 +1,6 @@
 package Security;
 
-import Bussiness.EstadoPersona;
+import Bussiness.EstadosTrabajados.EstadoPersona;
 import Bussiness.Persona;
 import Security.Roles.Apunteniano;
 import Security.Roles.Rol;

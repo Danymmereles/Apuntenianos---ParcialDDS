@@ -1,4 +1,4 @@
-package Bussiness;
+package Bussiness.EstadosTrabajados;
 
 public enum EstadoPersona {
     INHABILITADO,
