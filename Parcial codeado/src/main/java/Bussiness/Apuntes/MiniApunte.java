@@ -11,14 +11,19 @@ public class MiniApunte extends ApunteSubido{
     private FileInputStream miDocumento;
 
     //GETTERS ----------------------------------------------------------
-
+    public FileInputStream getMiDocumento() {
+        return miDocumento;
+    }
 
     //SETTERS ----------------------------------------------------------
-
+    public void setMiDocumento(FileInputStream miDocumento) {
+        this.miDocumento = miDocumento;
+    }
 
     //CONSTRUCTOR ----------------------------------------------------------
-    public MiniApunte(){
-            this.situacion = Estado.PENDIENTE;
+    public MiniApunte(FileInputStream nuevoDocumento){
+        this.miDocumento = nuevoDocumento;
+        this.situacion = Estado.PENDIENTE;
     }
 
     //METODOS PROPIOS ----------------------------------------------------------
