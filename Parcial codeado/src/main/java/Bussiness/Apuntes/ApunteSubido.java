@@ -28,6 +28,5 @@ public abstract class ApunteSubido {
     }
 
     //METODOS PROPIOS ----------------------------------------------------------
-    //FIJARSE
 
 }
