@@ -43,6 +43,10 @@ public class Diccionario {
         return diccionarioGlobal;
     }
 
+    private Diccionario (){
+        //ACA CARGAMOS TODO
+    }
+
     //METODOS PROPIOS  ----------------------------------------------------------
     public boolean tenesEsteCurso (String curso){
         for (Curso esteCurso: this.cursosHabiles) {
@@ -54,8 +58,8 @@ public class Diccionario {
     }
 
     public boolean tenesEsteMateria (String materia){
-        for (Materia esteMateria: this.materiasHabiles) {
-            if (esteMateria.getNombre() == materia){
+        for (Materia estaMateria: this.materiasHabiles) {
+            if (estaMateria.getNombre() == materia){
                 return true;
             }
         }
