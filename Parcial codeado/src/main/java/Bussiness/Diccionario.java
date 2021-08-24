@@ -39,4 +39,34 @@ public class Diccionario {
     }
 
     //METODOS PROPIOS  ----------------------------------------------------------
+    public boolean tenesEsteCurso (String curso){
+        for (Curso esteCurso: this.cursosHabiles) {
+            if (esteCurso.getNombre() == curso){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean tenesEsteMateria (String materia){
+        for (Materia esteMateria: this.materiasHabiles) {
+            if (esteMateria.getNombre() == materia){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean tenesEstaCarrera (String carrera){
+        return this.carrerasHabiles.contains(carrera);
+    }
+
+    public boolean tenesEstaUniversidad (String universidad){
+        for (Universidad estaUniversidad: this.universidadesHabiles) {
+            if (estaUniversidad.getName() == universidad){
+                return true;
+            }
+        }
+        return false;
+    }
 }
