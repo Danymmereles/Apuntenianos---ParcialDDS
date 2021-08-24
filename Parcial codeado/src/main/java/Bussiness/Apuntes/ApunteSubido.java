@@ -8,6 +8,7 @@ public abstract class ApunteSubido {
     //ATRIBUTOS ----------------------------------------------------------
     protected Tematica temaApunte;
     protected Estado situacion;
+    protected int visualizaciones;
 
     //GETTERS ----------------------------------------------------------
     public Estado getSituacion() {
@@ -16,6 +17,10 @@ public abstract class ApunteSubido {
 
     public Tematica getTemaApunte() {
         return temaApunte;
+    }
+
+    public int getVisualizaciones() {
+        return visualizaciones;
     }
 
     //SETTERS ----------------------------------------------------------
@@ -28,5 +33,7 @@ public abstract class ApunteSubido {
     }
 
     //METODOS PROPIOS ----------------------------------------------------------
-
+    public void seVio (){
+        this.visualizaciones++;
+    }
 }

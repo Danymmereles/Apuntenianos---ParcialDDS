@@ -22,6 +22,7 @@ public class SuperApunte extends ApunteSubido{
     public SuperApunte (Tematica tematica){
         this.temaApunte = tematica;
         this.situacion = Estado.PENDIENTE;
+        this.visualizaciones = 0;
     }
 
     //METODOS PROPIOS ----------------------------------------------------------
