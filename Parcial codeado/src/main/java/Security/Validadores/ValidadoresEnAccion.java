@@ -8,7 +8,7 @@ public class ValidadoresEnAccion {
     private final List<Validador> AValidar;
 
     public ValidadoresEnAccion() {
-        this.AValidar = Arrays.asList( new ValidadorNull(), new ValidadorTamanio());
+        this.AValidar = Arrays.asList( new ValidadorNull(), new ValidadorTamanio(), new ValidadorConNumero(), new ValidadorPrimerLetraMayuscula());
     }
 
     public boolean esValida(String password) {
