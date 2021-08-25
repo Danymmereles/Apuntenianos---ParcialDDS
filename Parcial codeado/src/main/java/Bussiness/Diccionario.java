@@ -1,8 +1,11 @@
 package Bussiness;
 
+import Bussiness.APIS.AdapterApi;
+import Bussiness.APIS.ListadoUniversidades;
 import Bussiness.Tematicas.Curso;
 import Bussiness.Tematicas.Materia;
 
+import java.io.IOException;
 import java.util.List;
 
 public class Diccionario {
@@ -35,15 +38,18 @@ public class Diccionario {
     //NO HAY PORQUE SE AGREGAN DE A POCO
 
     //CONSTRUCTOR  ----------------------------------------------------------
-    public static Diccionario getInstance() {
+    public static Diccionario getInstance() throws IOException {
         if(diccionarioGlobal== null){
             diccionarioGlobal = new Diccionario();
         }
         return diccionarioGlobal;
     }
 
-    private Diccionario (){
-        //ACA CARGAMOS TODO
+    private Diccionario () throws IOException {
+        ListadoUniversidades universidadObtenidas = AdapterApi.getInstance().obtenerUniversidades();
+        for (Universidad unaUniversidad:universidadObtenidas.universidades) {
+            this.universidadesHabiles.add(unaUniversidad);
+        }
     }
 
     //METODOS PROPIOS  ----------------------------------------------------------

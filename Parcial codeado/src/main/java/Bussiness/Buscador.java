@@ -2,12 +2,13 @@ package Bussiness;
 
 import Bussiness.Apuntes.ApunteSubido;
 
+import java.io.IOException;
 import java.util.List;
 
 public class Buscador {
 
     //METODOS PROPIOS ----------------------------------------------------------
-    public List<ApunteSubido> buscarSegun (List<String> criterios){
+    public List<ApunteSubido> buscarSegun (List<String> criterios) throws IOException {
         for (String aEvaluar: criterios) {
             if(Diccionario.getInstance().tenesEsteCurso(aEvaluar)){
                 if (criterios.size()>1){
