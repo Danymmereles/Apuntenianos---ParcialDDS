@@ -2,6 +2,7 @@ package Security;
 
 import Bussiness.EstadosTrabajados.EstadoPersona;
 import Bussiness.Persona;
+import Database.DBUsuario;
 import Security.Roles.Apunteniano;
 import Security.Roles.Rol;
 import Security.Roles.Visitante;
@@ -30,7 +31,7 @@ public class Usuario {
 
         this.rol = Apunteniano.getInstance();
         this.persona = aRegistrar;
-        //El estado de la persona se determina dentro de la persona en lugar del usuario
+        //DBUsuario.agregarUsuario(this);
     }
 
     public Usuario(){
@@ -60,20 +61,24 @@ public class Usuario {
     //SETTERS ----------------------------------------------------------
     public void setMail(String mail) {
         this.mail = mail;
+        //DBUsuario.actualizarUsuario(this);
     }
 
     public void setPassword(String password) {
         if(new ValidadoresEnAccion().esValida(password)){
             this.password = password;
+            //DBUsuario.actualizarUsuario(this);
         }
     }
 
     public void setRol(Rol rol) {
         this.rol = rol;
+        //DBUsuario.actualizarUsuario(this);
     }
 
     public void setPersona(Persona persona) {
         this.persona = persona;
+        //DBUsuario.actualizarUsuario(this);
     }
 
     //METODOS PROPIOS ----------------------------------------------------------
