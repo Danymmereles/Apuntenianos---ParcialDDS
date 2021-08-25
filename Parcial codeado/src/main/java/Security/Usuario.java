@@ -103,8 +103,12 @@ public class Usuario {
     }
 
     public boolean puedeSuspenderse (){
-        String miClaseRol = this.rol.getClass().getName();
-        return (miClaseRol.equals("Apunteniano"));
+        return (this.rolUsuario().equals("Apunteniano"));
+    }
+
+    //METODOS AUXILIARES
+    public String rolUsuario (){
+        this.rol.getClass().getName();
     }
 
 }
