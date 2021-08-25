@@ -2,19 +2,19 @@ package Bussiness.Tematicas;
 
 public abstract class Tematica {
 
-    //ATRIBUTOS
+    //ATRIBUTOS ----------------------------------------------------------
     protected String nombre;
     //HAY QUE VER
 
-    //GETTERS
+    //GETTERS ----------------------------------------------------------
     public String getNombre() {
         return nombre;
     }
 
-    //SETTERS
+    //SETTERS ----------------------------------------------------------
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    //METODOS PROPIOS
+    //METODOS PROPIOS ----------------------------------------------------------
 }

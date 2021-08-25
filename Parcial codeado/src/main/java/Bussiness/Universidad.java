@@ -4,12 +4,12 @@ import java.util.List;
 
 public class Universidad {
 
-    //ATRIBUTOS
+    //ATRIBUTOS ----------------------------------------------------------
     private String name;
     private List<String> web_pages;
     private String stateprovince;
 
-    //GETTERS
+    //GETTERS ----------------------------------------------------------
     public String getName() {
         return name;
     }
@@ -22,7 +22,7 @@ public class Universidad {
         return stateprovince;
     }
 
-    //SETTERS
+    //SETTERS ----------------------------------------------------------
     public void setName(String name) {
         this.name = name;
     }
@@ -34,4 +34,5 @@ public class Universidad {
     public void setStateprovince(String stateprovince) {
         this.stateprovince = stateprovince;
     }
+
 }

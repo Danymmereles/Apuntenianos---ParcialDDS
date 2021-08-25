@@ -12,7 +12,6 @@ public class Persona {
     private String nombre;
     private List <Universidad> universidad;
     private List <String> carrera;
-    private int cantApuntes;
     private List <ApunteSubido> apuntes;
     private List <Sugerencia> sugerenciasEnviadas;
     private EstadoPersona estadoUsuario;
@@ -25,10 +24,6 @@ public class Persona {
 
     public EstadoPersona getEstadoUsuario() {
         return estadoUsuario;
-    }
-
-    public int getCantApuntes() {
-        return cantApuntes;
     }
 
     public List<ApunteSubido> getApuntes() {
@@ -76,7 +71,6 @@ public class Persona {
         this.nombre = suNombre;
         this.estadoUsuario = EstadoPersona.BLOQUEADO;
         //Porque debe validarlo
-        this.cantApuntes = 0;
     }
 
     //METODOS PROPIOS ----------------------------------------------------------
@@ -87,12 +81,10 @@ public class Persona {
 
     public void agregarApunte (ApunteSubido nuevoApunte){
         this.apuntes.add(nuevoApunte);
-        this.cantApuntes++;
     }
 
     public void eliminarApunte (ApunteSubido apunteAEliminar){
         this.apuntes.remove(apunteAEliminar);
-        this.cantApuntes--;
     }
 
     public void editarUniversidad (Universidad universidad){

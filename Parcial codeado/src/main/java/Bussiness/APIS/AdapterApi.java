@@ -10,10 +10,12 @@ import java.io.IOException;
 
 public class AdapterApi {
 
+    //ATRIBUTOS ----------------------------------------------------------
     private static AdapterApi instancia = null;
     private static final String urlApi = "http://universities.hipolabs.com/";
     private Retrofit retrofit;
 
+    //CONSTRUCTOR ----------------------------------------------------------
     private AdapterApi() {
         this.retrofit = new Retrofit.Builder()
                 .baseUrl(urlApi)
@@ -28,6 +30,7 @@ public class AdapterApi {
         return instancia;
     }
 
+    //METODOS PROPIOS ----------------------------------------------------------
     public ListadoUniversidades obtenerUniversidades () throws IOException {
         ServicioApi apiUniversidad = this.retrofit.create(ServicioApi.class);
         Call<ListadoUniversidades> listadoUniversidades = apiUniversidad.universidades("argentina");
