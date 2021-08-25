@@ -108,7 +108,7 @@ public class Usuario {
 
     //METODOS AUXILIARES
     public String rolUsuario (){
-        this.rol.getClass().getName();
+        return this.rol.getClass().getName();
     }
 
 }
