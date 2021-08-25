@@ -17,7 +17,7 @@ public class DBUsuario {
         Connection conexion;
         Statement fraseAEjecutar;
 
-        consulta = "INSERT INTO Usuario VALUES (NULL, '"+ nuevoUsuario.getMail() +"';";
+        consulta = "INSERT INTO Usuario VALUES (NULL, '"+ nuevoUsuario.getMail() +"'"+";";
 
         try {
             conexion = ConexionDB.conectar();
